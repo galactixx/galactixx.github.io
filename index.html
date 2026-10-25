@@ -52,6 +52,13 @@
     .body-copy { max-width: 780px; color: #354353; }
     .interests { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 17px; }
     .interest { display: inline-block; border: 1px solid #e2e7ee; background: #f9fafc; border-radius: 8px; padding: 5px 11px; color: #435164; font-size: 13px; line-height: 1.65; }
+    .education-list { display: flex; flex-direction: column; gap: 22px; }
+    .education-entry { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
+    .education-school { margin: 0 0 3px; font-size: 17px; line-height: 1.5; font-weight: 700; }
+    .education-school a { color: var(--text); }
+    .education-school a:hover { color: var(--link); }
+    .education-degree { color: var(--muted); font-size: 14px; margin: 0; }
+    .education-dates { color: var(--muted); font-size: 14px; white-space: nowrap; }
     .publication { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; align-items: start; margin: 4px 0 0; }
     .publication-thumbnail { display: block; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
     .publication-thumbnail img { display: block; width: 100%; height: auto; }
@@ -81,6 +88,7 @@
       .avatar { order: -1; height: 84px; width: 84px; }
       .hero .intro { font-size: 16px; }
       .links { column-gap: 16px; }
+      .education-entry { flex-direction: column; align-items: flex-start; gap: 2px; }
       .publication { grid-template-columns: 105px minmax(0, 1fr); gap: 15px; }
       .news-list li { grid-template-columns: 75px 1fr; gap: 10px; }
     }
@@ -107,6 +115,7 @@
       <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#news">News</a>
       </nav>
@@ -145,6 +154,26 @@
         <span class="interest">Authorship Verification</span>
         <span class="interest">Prompt Sensitivity</span>
         <span class="interest">Robustness &amp; Evaluation</span>
+      </div>
+    </section>
+
+    <section class="content-section" id="education">
+      <h2>Education</h2>
+      <div class="education-list">
+        <div class="education-entry">
+          <div>
+            <h3 class="education-school"><a href="https://www.uh.edu/" target="_blank" rel="noopener noreferrer">University of Houston</a></h3>
+            <p class="education-degree">Bachelor's degree, Computer Science</p>
+          </div>
+          <span class="education-dates">2024–2026</span>
+        </div>
+        <div class="education-entry">
+          <div>
+            <h3 class="education-school"><a href="https://www.utexas.edu/" target="_blank" rel="noopener noreferrer">The University of Texas at Austin</a></h3>
+            <p class="education-degree">Mathematics (minor)</p>
+          </div>
+          <span class="education-dates">2017–2019</span>
+        </div>
       </div>
     </section>
 

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nicholas Wlezien — AI and NLP researcher working on large language models, authorship verification, and reliable evaluation.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Nicholas Wlezien | AI & NLP Research">
+  <meta property="og:description" content="Research on language models, authorship verification, and robust evaluation. Publications and research links.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23eaf1fb'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='28' text-anchor='middle' fill='%23385b85'%3ENW%3C/text%3E%3C/svg%3E">
+  <title>Nicholas Wlezien | AI & NLP Research</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --text: #1c2532;
+      --muted: #586576;
+      --faint: #84909d;
+      --line: #e6eaf0;
+      --link: #245fa9;
+      --link-hover: #16457f;
+      --pale: #f6f8fb;
+      --max: 860px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--link); text-decoration: none; text-underline-offset: 3px; }
+    a:hover { color: var(--link-hover); text-decoration: underline; }
+    a:focus-visible { outline: 3px solid #95b7e2; outline-offset: 4px; border-radius: 2px; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .site-header .container { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { font-size: 15px; font-weight: 720; letter-spacing: -.015em; color: var(--text); white-space: nowrap; }
+    .brand:hover { text-decoration: none; }
+    .nav { display: flex; flex-wrap: wrap; gap: 25px; }
+    .nav a { font-size: 14px; color: var(--muted); font-weight: 520; }
+    .nav a:hover { color: var(--link); }
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) 146px; gap: 50px; align-items: center; padding: 72px 0 58px; }
+    .eyebrow { color: var(--link); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 760; margin: 0 0 12px; }
+    h1 { font-size: clamp(36px, 5.4vw, 51px); line-height: 1.16; letter-spacing: -.045em; margin: 0 0 15px; font-weight: 760; }
+    .hero .intro { font-size: 17px; line-height: 1.85; margin: 0; color: var(--muted); max-width: 610px; }
+    .avatar { aspect-ratio: 1; display: grid; place-items: center; border: 1px solid #dbe4ee; background: #f1f5fa; border-radius: 18px; color: #385b85; font: 650 43px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; user-select: none; }
+    .links { display: flex; align-items: center; flex-wrap: wrap; column-gap: 22px; row-gap: 6px; margin-top: 25px; }
+    .links a { font-size: 14px; font-weight: 640; }
+    .links a::after { content: ' ↗'; font-weight: 400; font-size: 12px; }
+    section.content-section { border-top: 1px solid var(--line); padding: 38px 0 43px; scroll-margin-top: 20px; }
+    h2 { font-size: 21px; letter-spacing: -.025em; line-height: 1.4; margin: 0 0 18px; font-weight: 720; }
+    p { margin: 0 0 15px; }
+    p:last-child { margin-bottom: 0; }
+    .body-copy { max-width: 780px; color: #354353; }
+    .interests { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 17px; }
+    .interest { display: inline-block; border: 1px solid #e2e7ee; background: #f9fafc; border-radius: 8px; padding: 5px 11px; color: #435164; font-size: 13px; line-height: 1.65; }
+    .publication { display: grid; grid-template-columns: 108px minmax(0,1fr); gap: 24px; margin: 4px 0 0; }
+    .publication-mark { background: var(--pale); border: 1px solid var(--line); border-radius: 9px; height: 124px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #415f88; text-align: center; }
+    .publication-mark strong { font-size: 18px; line-height: 1.2; font-weight: 750; }
+    .publication-mark span { font-size: 12px; color: #738398; letter-spacing: .04em; }
+    .pub-title { margin: -4px 0 5px; font-size: 18px; line-height: 1.5; letter-spacing: -.012em; font-weight: 720; }
+    .pub-title a { color: var(--text); }
+    .pub-title a:hover { color: var(--link); }
+    .pub-authors { color: #4a5666; font-size: 14px; margin: 0 0 3px; }
+    .pub-authors strong { color: var(--text); font-weight: 670; }
+    .pub-venue { font-size: 14px; color: #6b7887; margin: 0 0 12px; }
+    .pub-desc { font-size: 14px; color: #4e5a68; margin-bottom: 14px; line-height: 1.75; }
+    .pub-links { display: flex; flex-wrap: wrap; gap: 9px; }
+    .pub-links a { display: inline-block; padding: 4px 12px; font-size: 13px; font-weight: 650; border: 1px solid #d8e2ed; border-radius: 6px; background: #fff; }
+    .pub-links a:hover { text-decoration: none; background: #f6f9fd; border-color: #afc9e8; }
+    .news-list { list-style: none; padding: 0; margin: 0; }
+    .news-list li { display: grid; grid-template-columns: 83px 1fr; gap: 15px; margin: 0 0 12px; color: #405062; font-size: 14px; }
+    .news-list time { color: #728094; font-variant-numeric: tabular-nums; }
+    footer { border-top: 1px solid var(--line); color: var(--faint); font-size: 12px; padding: 24px 0 42px; }
+    footer .container { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    footer a { color: #61758d; }
+    @media (max-width: 620px) {
+      .container { padding: 0 21px; }
+      .site-header .container { padding-top: 14px; padding-bottom: 14px; align-items: flex-start; flex-direction: column; gap: 4px; }
+      .nav { gap: 18px; }
+      .hero { padding: 44px 0 40px; grid-template-columns: 1fr; gap: 20px; }
+      .avatar { order: -1; height: 84px; width: 84px; font-size: 27px; border-radius: 13px; }
+      .hero .intro { font-size: 16px; }
+      .links { column-gap: 16px; }
+      .publication { grid-template-columns: 1fr; gap: 15px; }
+      .publication-mark { width: 100px; height: 92px; }
+      .news-list li { grid-template-columns: 75px 1fr; gap: 10px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicholas Wlezien",
+    "description": "Researcher in natural language processing and large language models",
+    "sameAs": [
+      "https://aclanthology.org/people/nicholas-wlezien/",
+      "https://orcid.org/0009-0006-5576-3672"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top">Nicholas Wlezien</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">AI &amp; NLP Research</p>
+        <h1>Nicholas Wlezien</h1>
+        <p class="intro">I study large language models and natural language processing, with a focus on authorship verification, model behavior, and reliable evaluation.</p>
+        <div class="links" aria-label="Research profiles">
+          <a href="https://aclanthology.org/people/nicholas-wlezien/" target="_blank" rel="noopener noreferrer">ACL Anthology</a>
+          <a href="https://orcid.org/0009-0006-5576-3672" target="_blank" rel="noopener noreferrer">ORCID</a>
+          <a href="https://aclanthology.org/2026.emnlp-main.1477/" target="_blank" rel="noopener noreferrer">Latest paper</a>
+        </div>
+      </div>
+      <div class="avatar" aria-label="Nicholas Wlezien initials; replace with a portrait if desired" role="img">NW</div>
+    </div>
+
+    <section class="content-section" id="about">
+      <h2>About</h2>
+      <div class="body-copy">
+        <p>My research interests lie at the intersection of natural language processing and large language models. I am particularly interested in how model predictions are affected by prompts, how language models interpret stylistic evidence, and how to evaluate these systems more reliably.</p>
+        <p>In my recent work at EMNLP 2026, we examine a conservative bias in zero-shot authorship verification and investigate lightweight prompt interventions that encourage models to distinguish writing style from topic and content.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="research">
+      <h2>Research interests</h2>
+      <p class="body-copy">I am interested in developing more reliable ways to understand, evaluate, and improve language model behavior.</p>
+      <div class="interests" aria-label="Research topics">
+        <span class="interest">Large Language Models</span>
+        <span class="interest">Authorship Verification</span>
+        <span class="interest">Prompt Sensitivity</span>
+        <span class="interest">Robustness &amp; Evaluation</span>
+      </div>
+    </section>
+
+    <section class="content-section" id="publications">
+      <h2>Publications</h2>
+      <article class="publication">
+        <div class="publication-mark" aria-hidden="true"><strong>EMNLP</strong><span>2026</span></div>
+        <div>
+          <h3 class="pub-title"><a href="https://aclanthology.org/2026.emnlp-main.1477/">When LLMs Say No: Diagnosing and Mitigating Conservative Bias in Authorship Verification</a></h3>
+          <p class="pub-authors"><strong>Nicholas Wlezien</strong> and Rakesh M. Verma</p>
+          <p class="pub-venue"><em>Proceedings of EMNLP 2026</em>, pp. 33771–33788</p>
+          <p class="pub-desc">We identify a conservative bias in zero-shot LLM authorship verification, especially when texts by the same author differ in content. Simple prompts that encourage attention to writing style improve same-author accuracy while also improving macro-F1.</p>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2026.emnlp-main.1477/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a href="https://aclanthology.org/2026.emnlp-main.1477.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="https://github.com/galactixx/when-llms-say-no" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="https://aclanthology.org/2026.emnlp-main.1477.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-section" id="news">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><time datetime="2026-10">Oct 2026</time><span>Our paper <a href="https://aclanthology.org/2026.emnlp-main.1477/">“When LLMs Say No”</a> appeared in the EMNLP 2026 proceedings.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year">2026</span> Nicholas Wlezien</span>
+      <span>Built for <a href="https://pages.github.com/">GitHub Pages</a> · Inspired by <a href="https://github.com/yangxinrui811/minimal-academic-homepage">Minimal Academic Homepage</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -41,7 +41,7 @@
     .eyebrow { color: var(--link); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 760; margin: 0 0 12px; }
     h1 { font-size: clamp(36px, 5.4vw, 51px); line-height: 1.16; letter-spacing: -.045em; margin: 0 0 15px; font-weight: 760; }
     .hero .intro { font-size: 17px; line-height: 1.85; margin: 0; color: var(--muted); max-width: 610px; }
-    .avatar { aspect-ratio: 1; display: grid; place-items: center; border: 1px solid #dbe4ee; background: #f1f5fa; border-radius: 18px; color: #385b85; font: 650 43px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.06em; user-select: none; }
+    .avatar { display: block; width: 146px; height: 146px; object-fit: cover; object-position: center; border: 1px solid #dbe4ee; border-radius: 50%; background: #f1f5fa; }
     .links { display: flex; align-items: center; flex-wrap: wrap; column-gap: 22px; row-gap: 6px; margin-top: 25px; }
     .links a { font-size: 14px; font-weight: 640; }
     .links a::after { content: ' ↗'; font-weight: 400; font-size: 12px; }
@@ -77,7 +77,7 @@
       .site-header .container { padding-top: 14px; padding-bottom: 14px; align-items: flex-start; flex-direction: column; gap: 4px; }
       .nav { gap: 18px; }
       .hero { padding: 44px 0 40px; grid-template-columns: 1fr; gap: 20px; }
-      .avatar { order: -1; height: 84px; width: 84px; font-size: 27px; border-radius: 13px; }
+      .avatar { order: -1; height: 84px; width: 84px; }
       .hero .intro { font-size: 16px; }
       .links { column-gap: 16px; }
       .publication { grid-template-columns: 105px minmax(0, 1fr); gap: 15px; }
@@ -123,7 +123,7 @@
           <a href="https://aclanthology.org/2026.emnlp-main.1477/" target="_blank" rel="noopener noreferrer">Latest paper</a>
         </div>
       </div>
-      <div class="avatar" aria-label="Nicholas Wlezien initials; replace with a portrait if desired" role="img">NW</div>
+      <img class="avatar" src="profile.png" alt="Portrait of Nicholas Wlezien" width="146" height="146" decoding="async">
     </div>
 
     <section class="content-section" id="about">

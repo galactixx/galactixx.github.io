@@ -52,10 +52,11 @@
     .body-copy { max-width: 780px; color: #354353; }
     .interests { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 17px; }
     .interest { display: inline-block; border: 1px solid #e2e7ee; background: #f9fafc; border-radius: 8px; padding: 5px 11px; color: #435164; font-size: 13px; line-height: 1.65; }
-    .publication { display: grid; grid-template-columns: 108px minmax(0,1fr); gap: 24px; margin: 4px 0 0; }
-    .publication-mark { background: var(--pale); border: 1px solid var(--line); border-radius: 9px; height: 124px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #415f88; text-align: center; }
-    .publication-mark strong { font-size: 18px; line-height: 1.2; font-weight: 750; }
-    .publication-mark span { font-size: 12px; color: #738398; letter-spacing: .04em; }
+    .publication { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; align-items: start; margin: 4px 0 0; }
+    .publication-thumbnail { display: block; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    .publication-thumbnail img { display: block; width: 100%; height: auto; }
+    .publication-thumbnail:hover { border-color: #afc9e8; }
+    .publication-details { min-width: 0; }
     .pub-title { margin: -4px 0 5px; font-size: 18px; line-height: 1.5; letter-spacing: -.012em; font-weight: 720; }
     .pub-title a { color: var(--text); }
     .pub-title a:hover { color: var(--link); }
@@ -79,8 +80,7 @@
       .avatar { order: -1; height: 84px; width: 84px; font-size: 27px; border-radius: 13px; }
       .hero .intro { font-size: 16px; }
       .links { column-gap: 16px; }
-      .publication { grid-template-columns: 1fr; gap: 15px; }
-      .publication-mark { width: 100px; height: 92px; }
+      .publication { grid-template-columns: 105px minmax(0, 1fr); gap: 15px; }
       .news-list li { grid-template-columns: 75px 1fr; gap: 10px; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -148,8 +148,10 @@
     <section class="content-section" id="publications">
       <h2>Publications</h2>
       <article class="publication">
-        <div class="publication-mark" aria-hidden="true"><strong>EMNLP</strong><span>2026</span></div>
-        <div>
+        <a class="publication-thumbnail" href="https://aclanthology.org/2026.emnlp-main.1477.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF of When LLMs Say No">
+          <img src="emnlp2026.png" alt="First page of When LLMs Say No: Diagnosing and Mitigating Conservative Bias in Authorship Verification" loading="lazy" decoding="async">
+        </a>
+        <div class="publication-details">
           <h3 class="pub-title"><a href="https://aclanthology.org/2026.emnlp-main.1477/">When LLMs Say No: Diagnosing and Mitigating Conservative Bias in Authorship Verification</a></h3>
           <p class="pub-authors"><strong>Nicholas Wlezien</strong> and Rakesh M. Verma</p>
           <p class="pub-venue"><em>Proceedings of EMNLP 2026</em>, pp. 33771–33788</p>

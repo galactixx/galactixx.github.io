@@ -30,7 +30,7 @@
     a:hover { color: var(--link-hover); text-decoration: underline; }
     a:focus-visible { outline: 3px solid #95b7e2; outline-offset: 4px; border-radius: 2px; }
     .container { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
-    .site-header { border-bottom: 1px solid var(--line); }
+    .site-header { border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 1000; background: var(--bg); }
     .site-header .container { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
     .brand { font-size: 15px; font-weight: 720; letter-spacing: -.015em; color: var(--text); white-space: nowrap; }
     .brand:hover { text-decoration: none; }

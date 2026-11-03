@@ -1,6 +1,6 @@
 # Nicholas Wlezien — Academic Website
 
-Personal academic website featuring my research and publications in artificial intelligence and natural language processing.
+Personal website featuring my research and publications in artificial intelligence and natural language processing.
 
 **Website:** https://galactixx.github.io/
 
@@ -16,4 +16,4 @@ Nicholas Wlezien and Rakesh M. Verma. EMNLP 2026.
 
 ## Website
 
-Built with HTML and CSS and hosted using GitHub Pages. Website content can be updated by editing `index.html`.
+Built with HTML and CSS and hosted using GitHub Pages.

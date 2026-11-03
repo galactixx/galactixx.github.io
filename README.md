@@ -10,9 +10,8 @@ Personal website featuring my research and publications in artificial intelligen
 
 ## Publications
 
-**When LLMs Say No: Diagnosing and Mitigating Conservative Bias in Authorship Verification**  
+[**When LLMs Say No: Diagnosing and Mitigating Conservative Bias in Authorship Verification**](https://aclanthology.org/2026.emnlp-main.1477/)  
 Nicholas Wlezien and Rakesh M. Verma. EMNLP 2026.  
-[Paper](https://aclanthology.org/2026.emnlp-main.1477/)
 
 ## Website
 

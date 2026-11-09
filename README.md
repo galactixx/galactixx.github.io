@@ -1,5 +1,3 @@
-# Nicholas Wlezien — Academic Website
-
 Personal website featuring my research and publications in artificial intelligence and natural language processing.
 
 **Website:** https://galactixx.github.io/
